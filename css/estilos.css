@@ -1,0 +1,377 @@
+/*------------------------------
+1. TIPOGRAFIA DEL SITIO
+--------------------------------*/
+html {
+  font-size: 13px;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+}
+
+/*------------------------------
+2. ESTILOS GENERALES
+--------------------------------*/
+.bg-primary {
+  background-color: #b81e2d !important;
+}
+
+.bg-gris {
+  background-color: #313332;
+}
+
+.text-rojo {
+  color: #b81e2d;
+}
+
+.texto-blanco {
+  color: white !important;
+}
+
+.titulo-seccion {
+  text-transform: uppercase;
+  color: #b81e2d;
+  font-size: 1.3rem;
+  font-weight: bold;
+  display: inline-block;
+  position: relative;
+}
+.titulo-seccion:after {
+  content: '';
+  position: absolute;
+  width: 3.5rem;
+  height: 2px;
+  background-color: currentcolor;
+  top: 0.6rem;
+  right: -4rem;
+}
+
+.centrado {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+/*------------------------------
+3. Seccion inicio
+--------------------------------*/
+/*----Barra de navegacion----*/
+.navbar-fixed-top {
+  position: fixed;
+  right: 0;
+  left: 0;
+  z-index: 1030;
+}
+
+/*Estilos al logotipo del sitio*/
+.logo img {
+  width: 300px;
+  height: auto;
+}
+
+/*Estilos de los enlace del #menu-navegacion*/
+.navbar-dark .navbar-nav .nav-link {
+  padding: .7rem 0rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  text-transform: uppercase;
+  color: white;
+  font-weight: bold;
+  font-size: 1.2rem;
+  margin-left: 1rem;
+  border-bottom: 2px solid white;
+  -webkit-transition: all .3s ease;
+  transition: all .3s ease;
+  /*Estilos estado hover de enlace*/
+  /*Estilos para el enlace activo*/
+}
+.navbar-dark .navbar-nav .nav-link:hover {
+  background-color: #dd2c3e;
+  color: white;
+}
+.navbar-dark .navbar-nav .nav-link .active {
+  background-color: #b81e2d;
+  border-bottom: 2px solid white;
+}
+
+/*Estilos boton del menu responsive personalizado*/
+.navbar-toggler {
+  padding: 0;
+  font-size: 1rem;
+  line-height: 1;
+  background-color: transparent;
+  border: none;
+  border-radius: 0;
+  outline: 0;
+}
+
+button:focus {
+  outline: none;
+}
+
+.boton-menu:before {
+  content: "\f0c9";
+  font-family: 'Font Awesome 5 Free';
+  font-weight: 900;
+  color: #fff;
+  font-size: 3rem;
+}
+
+.icono-cerrar:before {
+  content: "\f00d";
+  position: relative;
+  left: .2rem;
+  font-size: 3rem;
+}
+
+/*----Banner de la pagina----*/
+#inicio {
+  background-image: url(../images/elevador.png);
+  background-position: center top;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100vh;
+}
+
+/*------------------------------
+4. Seccion empresa
+--------------------------------*/
+#empresa img {
+  width: 100px;
+  margin-bottom: 0.8rem;
+}
+#empresa .btn-link {
+  color: #b81e2d;
+  text-transform: uppercase;
+  font-size: 1.2rem;
+}
+#empresa .btn-link:focus {
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+#empresa .card-header {
+  padding: 0.5rem 1rem;
+  margin-bottom: 2rem;
+}
+
+/*------------------------------
+5. Seccion productos
+--------------------------------*/
+#productos img {
+  width: 100px;
+  margin-top: .5rem;
+  margin-bottom: .8rem;
+}
+
+.subtitulo {
+  text-transform: uppercase;
+  color: #b81e2d;
+  font-size: 1rem;
+  font-weight: bold;
+  margin-bottom: 1.3rem;
+}
+
+#productos p {
+  text-transform: uppercase;
+  line-height: .9rem;
+}
+
+/*------------------------------
+6. Seccion servicios
+--------------------------------*/
+.nav-tabs {
+  text-transform: uppercase;
+  font-weight: bold;
+}
+.nav-tabs .nav-link {
+  color: #b81e2d;
+  border-color: #b81e2d !important;
+  border-radius: 1.5rem 1.5rem 0 0;
+  padding: 0.7rem .8rem;
+}
+.nav-tabs .nav-link.active {
+  color: white !important;
+  background-color: #b81e2d !important;
+  border-color: #b81e2d !important;
+}
+
+.tab-content {
+  background-color: #b81e2d;
+  color: white;
+}
+.tab-content h2 {
+  text-transform: uppercase;
+  margin-bottom: .6rem;
+  padding: .8rem 0 0 .8rem;
+  font-size: 1.5rem;
+}
+.tab-content p {
+  padding: 0 .8rem 0 .8rem;
+}
+
+/*------------------------------
+Y. Seccion nosotros
+--------------------------------*/
+#nosotros .container .row {
+  background-color: #1A1A1A;
+}
+#nosotros h3 {
+  text-transform: uppercase;
+  margin-bottom: .6rem;
+  padding: .8rem 0 0 .8rem;
+  font-size: 1.5rem;
+}
+#nosotros p {
+  padding: 0 .8rem 0 .8rem;
+}
+
+/*------------------------------
+7. Seccion clientes
+--------------------------------*/
+.clientes a img {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+/*------------------------------
+8. Seccion contacto
+--------------------------------*/
+.contacto {
+  width: 70px;
+}
+
+.btn {
+  border-radius: 2rem;
+  padding: .6rem 2rem;
+  font-weight: bold;
+}
+
+.btn-primary {
+  background-color: #b81e2d;
+  border-color: #b81e2d;
+  color: white;
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
+  -webkit-transition: all .6s ease;
+  transition: all .6s ease;
+  /*Efecto de la caja desplazada en el boton*/
+}
+.btn-primary:active {
+  background-color: white !important;
+  border-color: #ce2232 !important;
+  color: #b81e2d !important;
+}
+.btn-primary:focus {
+  background-color: white;
+  border-color: #b81e2d;
+  color: #b81e2d;
+  -webkit-box-shadow: 0 0 0 0.2rem rgba(184, 30, 45, 0.5) !important;
+          box-shadow: 0 0 0 0.2rem rgba(184, 30, 45, 0.5) !important;
+}
+.btn-primary:hover {
+  background-color: white;
+  border-color: #b81e2d;
+  color: #b81e2d;
+}
+.btn-primary:hover::before {
+  width: 130%;
+  left: -15%;
+}
+.btn-primary:before {
+  content: '';
+  width: 0px;
+  height: 100%;
+  background-color: white;
+  position: absolute;
+  left: 50%;
+  top: 0;
+  z-index: -1;
+  -webkit-transform: skew(45deg, 0);
+          transform: skew(45deg, 0);
+  -webkit-transition: all .4s ease;
+  transition: all .4s ease;
+}
+
+.correo:hover {
+  text-decoration: none;
+  color: white;
+  cursor: pointer;
+}
+
+/*------------------------------
+9. Footer
+--------------------------------*/
+footer {
+  background-color: black;
+}
+footer p {
+  color: white;
+  text-align: center;
+}
+
+/* =============================================
+X. Show de las Medias Queries
+============================================= */
+/* --------------Vista Md ------------- */
+@media (min-width: 768px) {
+  html {
+    font-size: 16px;
+  }
+
+  /*Seccion empresa*/
+  #empresa .card-header {
+    margin-bottom: 0;
+  }
+
+  /*Seccion 6. Servicios*/
+  .nav-tabs .nav-link {
+    margin-left: .5rem;
+    padding: 0.7rem 2.8rem;
+  }
+  .nav-tabs:first-child {
+    margin-left: 1rem;
+  }
+
+  .tab-content h2 {
+    margin-bottom: 1.2rem;
+    padding: 0;
+    font-size: 1.75rem;
+  }
+  .tab-content p {
+    padding: 0 .8rem 0 0;
+  }
+}
+/* --------------Vista Lg ------------- */
+@media (min-width: 992px) {
+  .navbar-dark .navbar-nav .nav-link {
+    border-bottom: none;
+  }
+  .navbar-dark .navbar-nav .nav-link:hover {
+    border-bottom: 2px solid white;
+    background-color: transparent;
+  }
+  .navbar-dark .navbar-nav .nav-link.active {
+    border-bottom: 2px solid white;
+  }
+}
+/* --------------Vista Xl ------------- */
+@media (min-width: 1200px) {
+  html {
+    font-size: 17px;
+  }
+}
+
+/*# sourceMappingURL=estilos.css.map */
