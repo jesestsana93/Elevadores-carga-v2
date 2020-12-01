@@ -1,0 +1,393 @@
+//--------------------------------------
+// 			PATRON DE COLORES
+//--------------------------------------
+$principal: #b81e2d;
+$secundario: #313332;
+
+/*------------------------------
+1. TIPOGRAFIA DEL SITIO
+--------------------------------*/
+html {
+    font-size: 13px;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+/*------------------------------
+  2. ESTILOS GENERALES
+  --------------------------------*/
+.bg-primary {
+    background-color: $principal !important;
+}
+
+.bg-gris {
+    background-color: $secundario;
+}
+
+.text-rojo {
+    color: $principal;
+}
+
+.texto-blanco {
+    color: white !important;
+}
+
+.titulo-seccion {
+    text-transform: uppercase;
+    color: $principal;
+    font-size: 1.3rem;
+    font-weight: bold;
+    display: inline-block;
+    position: relative;
+}
+
+.centrado {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+/*------------------------------
+  3. Seccion inicio
+  --------------------------------*/
+/*Estilos al logotipo del sitio*/
+.logo img {
+    width: 20rem;
+    height: auto;
+}
+
+/*Estilos de los enlace del #menu-navegacion*/
+.navbar-dark .navbar-nav .nav-link {
+    padding: .7rem 0rem;
+    display: flex;
+    justify-content: space-between;
+    text-transform: uppercase;
+    color: white;
+    font-weight: bold;
+    font-size: 1.2rem;
+    margin-left: 1rem;
+    border-bottom: 2px solid white;
+    transition: all .3s ease;
+
+    /*Estilos estado hover de enlace*/
+    &:hover {
+        background-color: $principal;
+        color: white;
+    }
+
+    /*Estilos para el enlace activo*/
+    &.active {
+        background-color: $principal;
+        border-bottom: 2px solid white;
+    }
+}
+
+/*Estilos boton del menu responsive personalizado*/
+.navbar-toggler {
+    padding: 0;
+    font-size: 1rem;
+    line-height: 1;
+    background-color: transparent;
+    border: none;
+    border-radius: 0;
+    outline: 0;
+}
+
+button:focus {
+    outline: none;
+}
+
+.boton-menu:before {
+    content: "\f0c9";
+    font-family: 'Font Awesome 5 Free';
+    font-weight: 900;
+    color: #fff;
+    font-size: 2.5rem;
+}
+
+.icono-cerrar:before {
+    content: "\f00d";
+    position: relative;
+    left: .2rem;
+    font-size: 2.5rem;
+}
+
+/*----Banner de la pagina----*/
+.banner {
+    margin-top: 5rem;
+}
+
+/*------------------------------
+  4. Seccion empresa
+  --------------------------------*/
+#empresa {
+
+    img {
+        width: 100px;
+        margin-bottom: 0.8rem;
+    }
+
+    .btn-link {
+        color: $principal;
+        text-transform: uppercase;
+        font-size: 1.2rem;
+    }
+
+    .btn-link:focus {
+        box-shadow: none;
+    }
+
+    .card-header {
+        padding: 0.5rem 1rem;
+        margin-bottom: 2rem;
+    }
+}
+
+/*------------------------------
+  5. Seccion productos
+  --------------------------------*/
+#productos {
+
+    img {
+        width: 100px;
+        margin-top: .5rem;
+        margin-bottom: .8rem;
+    }
+}
+
+
+.subtitulo {
+    text-transform: uppercase;
+    color: $principal;
+    font-size: 1rem;
+    font-weight: bold;
+    margin-bottom: 1.3rem;
+}
+
+#productos p {
+    text-transform: uppercase;
+    line-height: .9rem;
+}
+
+/*------------------------------
+  6. Seccion servicios
+  --------------------------------*/
+.nav-tabs {
+    text-transform: uppercase;
+    font-weight: bold;
+
+    .nav-link {
+        color: $principal;
+        border-color: $principal !important;
+        border-radius: 1.5rem 1.5rem 0 0;
+        padding: 0.7rem .8rem;
+
+        &.active {
+            color: white !important;
+            background-color: $principal !important;
+            border-color: $principal !important;
+        }
+    }
+}
+
+.tab-content {
+    background-color: $principal;
+    color: white;
+
+    h2 {
+        text-transform: uppercase;
+        margin-bottom: .6rem;
+        padding: .8rem 0 0 .8rem;
+        font-size: 1.5rem;
+    }
+
+    p {
+        padding: 0 .8rem 0 .8rem;
+    }
+}
+
+/*------------------------------
+  Y. Seccion nosotros
+  --------------------------------*/
+#nosotros {
+    .container .row {
+        background-color: #1A1A1A;
+
+        h3 {
+            text-transform: uppercase;
+            margin-bottom: .6rem;
+            padding: .8rem 0 0 .8rem;
+            font-size: 1.5rem;
+        }
+
+        p {
+            padding: 0 .8rem 0 .8rem;
+        }
+    }
+}
+
+/*------------------------------
+  7. Seccion clientes
+  --------------------------------*/
+.clientes a img {
+    align-items: center;
+}
+
+/*------------------------------
+  8. Seccion contacto
+  --------------------------------*/
+.contacto {
+    width: 70px;
+}
+
+.btn {
+    border-radius: 2rem;
+    padding: .6rem 2rem;
+    font-weight: bold;
+}
+
+.btn-primary {
+    background-color: $principal;
+    border-color: $principal;
+    color: white;
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+    transition: all .6s ease;
+
+    /*Efecto de la caja desplazada en el boton*/
+    &:active {
+        background-color: white !important;
+        border-color: #ce2232 !important;
+        color: $principal !important;
+    }
+
+    &:focus {
+        background-color: white;
+        border-color: $principal;
+        color: $principal;
+        box-shadow: 0 0 0 0.2rem rgba(184, 30, 45, 0.5) !important;
+    }
+
+    &:hover {
+        background-color: white;
+        border-color: $principal;
+        color: $principal;
+
+        &::before {
+            width: 130%;
+            left: -15%;
+        }
+    }
+
+    &:before {
+        content: '';
+        width: 0px;
+        height: 100%;
+        background-color: white;
+        position: absolute;
+        left: 50%;
+        top: 0;
+        z-index: -1;
+        transform: skew(45deg, 0);
+        transition: all .4s ease;
+    }
+
+}
+
+.correo:hover {
+    text-decoration: none;
+    color: white;
+    cursor: pointer;
+}
+
+
+/*------------------------------
+  9. Footer
+  --------------------------------*/
+footer {
+    background-color: black;
+
+    p {
+        color: white;
+        text-align: center;
+    }
+}
+
+
+/* =============================================
+  X. Show de las Medias Queries
+  ============================================= */
+/* --------------Vista sm ------------- */
+@media (min-width: 576px) {
+    .titulo-seccion{
+        &:after {
+            content: '';
+            position: absolute;
+            width: 2rem;
+            height: 2px;
+            background-color: currentcolor;
+            top: 0.6rem;
+            right: -2rem;
+        }
+    }
+}
+
+/* --------------Vista Md ------------- */
+@media (min-width: 768px) {
+    html {
+        font-size: 16px;
+    }
+
+    /*Seccion empresa*/
+    #empresa .card-header {
+        margin-bottom: 0;
+    }
+
+    /*Seccion 6. Servicios*/
+    .nav-tabs .nav-link {
+        margin-left: .5rem;
+        padding: 0.7rem 2.8rem;
+    }
+
+    .nav-tabs:first-child {
+        margin-left: 1rem;
+    }
+
+    .tab-content h2 {
+        margin-bottom: 1.2rem;
+        padding: 0;
+        font-size: 1.75rem;
+    }
+
+    .tab-content p {
+        padding: 0 .8rem 0 0;
+    }
+}
+
+/* --------------Vista Lg ------------- */
+@media (min-width: 992px) {
+    .navbar-dark .navbar-nav .nav-link {
+        border-bottom: none;
+    }
+
+    .navbar-dark .navbar-nav .nav-link:hover {
+        border-bottom: 2px solid white;
+        background-color: transparent;
+    }
+
+    .navbar-dark .navbar-nav .nav-link.active {
+        border-bottom: 2px solid white;
+    }
+}
+
+/* --------------Vista Xl ------------- */
+@media (min-width: 1200px) {
+    html {
+        font-size: 17px;
+    }
+}
+
+/*# sourceMappingURL=estilos.css.map */

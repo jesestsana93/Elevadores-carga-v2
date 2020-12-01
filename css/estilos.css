@@ -10,8 +10,8 @@ body {
 }
 
 /*------------------------------
-2. ESTILOS GENERALES
---------------------------------*/
+  2. ESTILOS GENERALES
+  --------------------------------*/
 .bg-primary {
   background-color: #b81e2d !important;
 }
@@ -36,15 +36,6 @@ body {
   display: inline-block;
   position: relative;
 }
-.titulo-seccion:after {
-  content: '';
-  position: absolute;
-  width: 3.5rem;
-  height: 2px;
-  background-color: currentcolor;
-  top: 0.6rem;
-  right: -4rem;
-}
 
 .centrado {
   display: -webkit-box;
@@ -60,19 +51,11 @@ body {
 }
 
 /*------------------------------
-3. Seccion inicio
---------------------------------*/
-/*----Barra de navegacion----*/
-.navbar-fixed-top {
-  position: fixed;
-  right: 0;
-  left: 0;
-  z-index: 1030;
-}
-
+  3. Seccion inicio
+  --------------------------------*/
 /*Estilos al logotipo del sitio*/
 .logo img {
-  width: 300px;
+  width: 20rem;
   height: auto;
 }
 
@@ -97,10 +80,10 @@ body {
   /*Estilos para el enlace activo*/
 }
 .navbar-dark .navbar-nav .nav-link:hover {
-  background-color: #dd2c3e;
+  background-color: #b81e2d;
   color: white;
 }
-.navbar-dark .navbar-nav .nav-link .active {
+.navbar-dark .navbar-nav .nav-link.active {
   background-color: #b81e2d;
   border-bottom: 2px solid white;
 }
@@ -125,28 +108,24 @@ button:focus {
   font-family: 'Font Awesome 5 Free';
   font-weight: 900;
   color: #fff;
-  font-size: 3rem;
+  font-size: 2.5rem;
 }
 
 .icono-cerrar:before {
   content: "\f00d";
   position: relative;
   left: .2rem;
-  font-size: 3rem;
+  font-size: 2.5rem;
 }
 
 /*----Banner de la pagina----*/
-#inicio {
-  background-image: url(../images/elevador.png);
-  background-position: center top;
-  background-size: cover;
-  background-repeat: no-repeat;
-  height: 100vh;
+.banner {
+  margin-top: 5rem;
 }
 
 /*------------------------------
-4. Seccion empresa
---------------------------------*/
+  4. Seccion empresa
+  --------------------------------*/
 #empresa img {
   width: 100px;
   margin-bottom: 0.8rem;
@@ -166,8 +145,8 @@ button:focus {
 }
 
 /*------------------------------
-5. Seccion productos
---------------------------------*/
+  5. Seccion productos
+  --------------------------------*/
 #productos img {
   width: 100px;
   margin-top: .5rem;
@@ -188,8 +167,8 @@ button:focus {
 }
 
 /*------------------------------
-6. Seccion servicios
---------------------------------*/
+  6. Seccion servicios
+  --------------------------------*/
 .nav-tabs {
   text-transform: uppercase;
   font-weight: bold;
@@ -221,24 +200,24 @@ button:focus {
 }
 
 /*------------------------------
-Y. Seccion nosotros
---------------------------------*/
+  Y. Seccion nosotros
+  --------------------------------*/
 #nosotros .container .row {
   background-color: #1A1A1A;
 }
-#nosotros h3 {
+#nosotros .container .row h3 {
   text-transform: uppercase;
   margin-bottom: .6rem;
   padding: .8rem 0 0 .8rem;
   font-size: 1.5rem;
 }
-#nosotros p {
+#nosotros .container .row p {
   padding: 0 .8rem 0 .8rem;
 }
 
 /*------------------------------
-7. Seccion clientes
---------------------------------*/
+  7. Seccion clientes
+  --------------------------------*/
 .clientes a img {
   -webkit-box-align: center;
       -ms-flex-align: center;
@@ -246,8 +225,8 @@ Y. Seccion nosotros
 }
 
 /*------------------------------
-8. Seccion contacto
---------------------------------*/
+  8. Seccion contacto
+  --------------------------------*/
 .contacto {
   width: 70px;
 }
@@ -312,8 +291,8 @@ Y. Seccion nosotros
 }
 
 /*------------------------------
-9. Footer
---------------------------------*/
+  9. Footer
+  --------------------------------*/
 footer {
   background-color: black;
 }
@@ -323,8 +302,20 @@ footer p {
 }
 
 /* =============================================
-X. Show de las Medias Queries
-============================================= */
+  X. Show de las Medias Queries
+  ============================================= */
+/* --------------Vista sm ------------- */
+@media (min-width: 576px) {
+  .titulo-seccion:after {
+    content: '';
+    position: absolute;
+    width: 2rem;
+    height: 2px;
+    background-color: currentcolor;
+    top: 0.6rem;
+    right: -2rem;
+  }
+}
 /* --------------Vista Md ------------- */
 @media (min-width: 768px) {
   html {
@@ -341,6 +332,7 @@ X. Show de las Medias Queries
     margin-left: .5rem;
     padding: 0.7rem 2.8rem;
   }
+
   .nav-tabs:first-child {
     margin-left: 1rem;
   }
@@ -350,6 +342,7 @@ X. Show de las Medias Queries
     padding: 0;
     font-size: 1.75rem;
   }
+
   .tab-content p {
     padding: 0 .8rem 0 0;
   }
@@ -359,10 +352,12 @@ X. Show de las Medias Queries
   .navbar-dark .navbar-nav .nav-link {
     border-bottom: none;
   }
+
   .navbar-dark .navbar-nav .nav-link:hover {
     border-bottom: 2px solid white;
     background-color: transparent;
   }
+
   .navbar-dark .navbar-nav .nav-link.active {
     border-bottom: 2px solid white;
   }
@@ -373,5 +368,3 @@ X. Show de las Medias Queries
     font-size: 17px;
   }
 }
-
-/*# sourceMappingURL=estilos.css.map */
